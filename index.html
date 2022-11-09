@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Authentication</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <ul class="nav">
+      <li><a href="" class="nav_link">Sign Up</a></li>
+      <li><a href="" class="nav_link">Login</a></li>
+    </ul>
+
+    <!-- SIGNUP FORM -->
+    <div>
+      <form action="" class="hideForm" id="signup" autocomplete="off">
+        <div>
+          <div class="mainBg">
+            <img src="/images/SIGNUP.svg.svg" alt="img" />
+          </div>
+          <p class="form_title">Register</p>
+          <br />
+          <p class="signInError"></p>
+
+          <div class="input_group">
+            <label for="firstname">FirstName</label>
+            <input type="text" name="firstName" id="firstname" />
+          </div>
+
+          <div class="input_group">
+            <label for="lastname">LastName</label>
+            <input type="text" name="lastName" id="lastname" />
+          </div>
+
+          <div class="input_group">
+            <label for="emailsignin">Email</label>
+            <input type="email" name="email" id="emailsignin" />
+          </div>
+
+          <div class="input_group">
+            <label for="pass1">Password</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="password"
+              id="pass1"
+            />
+          </div>
+
+          <div class="input_group">
+            <label for="pass2">Confirm Password</label>
+            <input
+              type="password"
+              name="repeatPassword"
+              placeholder="confirm password"
+              id="pass2"
+            />
+          </div>
+          <div id="error-msg"></div>
+
+          <div class="input_group">
+            <input type="submit" value="signup" />
+          </div>
+          <div class="spin1 spinner hidespinner"></div>
+        </div>
+      </form>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <div class="Form">
+      <form action="" class="hideForm" id="login">
+        <div class="main">
+          <img src="/images/LOGIN.svg.svg" alt="img" style="font-size: 100px" />
+        </div>
+        <p class="form_title">SignIn</p>
+        <br />
+        <p class="logInError"></p>
+        <div class="input_group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="input_group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="input_group">
+          <input type="submit" value="Login" />
+        </div>
+        <div class="spin2 spinner hidespinner"></div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+    <script src="./script/confirmPassword.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
